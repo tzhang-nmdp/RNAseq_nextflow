@@ -1,0 +1,51 @@
+Sep-21 17:43:51.981 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
+Sep-21 17:43:52.338 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
+Sep-21 17:43:52.512 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/tzhang/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
+Sep-21 17:43:52.554 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-21 17:43:52.556 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-21 17:43:52.583 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-21 17:43:52.696 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-21 17:43:53.095 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Sep-21 17:43:53.313 [main] INFO  nextflow.cli.CmdRun - Launching `test_next_flow.nf` [tender_hodgkin] DSL2 - revision: a48d20e218
+Sep-21 17:43:53.315 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-21 17:43:53.316 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-21 17:43:53.354 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/tzhang/.nextflow/secrets/store.json
+Sep-21 17:43:53.366 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2d7e1102] - activable => nextflow.secret.LocalSecretsProvider@2d7e1102
+Sep-21 17:43:53.919 [main] DEBUG nextflow.Session - Session UUID: e764e423-77da-4292-b8fc-72cf847a5251
+Sep-21 17:43:53.920 [main] DEBUG nextflow.Session - Run name: tender_hodgkin
+Sep-21 17:43:53.923 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-21 17:43:54.014 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-21 17:43:54.541 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.3 build 5875
+  Created: 11-08-2023 18:37 UTC 
+  System: Linux 3.10.0-1160.76.1.el7.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.19+7-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 19881@ip-10-70-49-186.ec2.internal [10.70.49.186]
+  CPUs: 8 - Mem: 62 GB (13 GB) - Swap: 0 (0)
+Sep-21 17:43:54.725 [main] DEBUG nextflow.Session - Work-dir: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/work [xfs]
+Sep-21 17:43:54.725 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/bin
+Sep-21 17:43:54.788 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-21 17:43:54.866 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-21 17:43:54.970 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-21 17:43:55.119 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Sep-21 17:43:55.821 [main] DEBUG nextflow.Session - Session start
+Sep-21 17:43:59.080 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-21 17:43:59.310 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-21 17:43:59.310 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-21 17:43:59.342 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-21 17:43:59.349 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=62 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Sep-21 17:44:00.009 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: NUM_LINES
+Sep-21 17:44:00.066 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Sep-21 17:44:00.086 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NUM_LINES
+Sep-21 17:44:00.120 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-21 17:44:00.120 [main] DEBUG nextflow.Session - Session await
+Sep-21 17:44:01.021 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-21 17:44:01.075 [Task submitter] INFO  nextflow.Session - [4b/e009c7] Submitted process > NUM_LINES (1)
+Sep-21 17:44:02.682 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: NUM_LINES (1); status: COMPLETED; exit: 0; error: -; workDir: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/work/4b/e009c70fc21cdecb5079b27b560542]
+Sep-21 17:44:02.838 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-21 17:44:02.881 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-21 17:44:02.897 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sep-21 17:44:03.361 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-21 17:44:03.423 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-21 17:44:03.424 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
