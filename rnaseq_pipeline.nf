@@ -1,5 +1,27 @@
 /* environment and parameter setup */
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    IMPORT MODULES/SUBWORKFLOWS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+//
+// MODULE: Installed directly from nf-core/modules
+//
+include { CAT_FASTQ                   } from '../modules'
+include { QUALIMAP_RNASEQ             } from '../modules'
+include { STRINGTIE_STRINGTIE         } from '../modules'
+include { SUBREAD_FEATURECOUNTS       } from '../modules'
 
+//
+// SUBWORKFLOW: Consisting entirely of nf-core/modules
+//
+include { FASTQ_SUBSAMPLE_FQ_SALMON        } from '../subworkflows'
+include { FASTQ_FASTQC_UMITOOLS_TRIMGALORE } from '../subworkflows'
+include { FASTQ_FASTQC_UMITOOLS_FASTP      } from '../subworkflows'
+include { BAM_MARKDUPLICATES_PICARD        } from '../subworkflows'
+include { BAM_RSEQC                        } from '../subworkflows'
+include { BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG as BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG_FORWARD } from '../subworkflows'
+include { BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG as BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG_REVERSE } from '../subworkflows'
 
 params.input=""
 params.indir=""
