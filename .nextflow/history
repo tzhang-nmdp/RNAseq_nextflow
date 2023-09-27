@@ -1,0 +1,9 @@
+2023-09-21 01:25:20	1.9s	nauseous_mayer	ERR	3552b397d9effa86c1de7fae7fff3693	39e5ba35-3f43-4dee-8f26-efb32044a85c	nextflow run test_next_flow.nf --input test21.fastq.gz
+2023-09-21 01:29:48	2.4s	pedantic_perlman	ERR	ed1e841bd15fb8b9d23e577c21c5e3e6	e0b70ab8-8642-4776-9b64-80b94a7ac95f	nextflow run test_next_flow.nf --input test21.fastq.gz --sleep 1
+2023-09-21 01:35:36	2.4s	determined_crick	ERR	ef0a60a62f8f5aa697f1a712e6cd0490	4702165b-0144-4d4c-a89f-4d7ec454edf9	nextflow run test_next_flow.nf --input test21.fastq.gz --sleep 1
+2023-09-21 01:36:18	3.2s	elated_lagrange	OK	a48d20e2183f0393f1649f6c710f3150	4c4e9a9a-123e-43c0-8a05-68daf30269cd	nextflow run test_next_flow.nf --input test21.fastq.gz --sleep 1
+2023-09-21 01:36:57	3.8s	small_meninsky	OK	a48d20e2183f0393f1649f6c710f3150	59db38df-7280-413d-ad99-90951cc54180	nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
+2023-09-21 01:37:17	4.8s	gloomy_goldberg	OK	a48d20e2183f0393f1649f6c710f3150	ec0ef6a6-b8c1-475c-bb73-6f469e44775e	nextflow run test_next_flow.nf
+2023-09-21 01:39:55	4.8s	fervent_agnesi	OK	a48d20e2183f0393f1649f6c710f3150	d3c8ab70-2ac5-4b7a-87e6-6767a09cbdc1	nextflow run test_next_flow.nf
+2023-09-21 01:40:04	3.5s	grave_laplace	OK	a48d20e2183f0393f1649f6c710f3150	1bd5339a-9805-410b-bd5b-0c87d3ed72f8	nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
+2023-09-21 17:43:54	9.4s	tender_hodgkin	OK	a48d20e2183f0393f1649f6c710f3150	e764e423-77da-4292-b8fc-72cf847a5251	nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
