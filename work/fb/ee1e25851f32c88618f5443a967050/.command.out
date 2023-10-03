@@ -1,9 +1,0 @@
-[2m2023-10-02T18:49:27.431930Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m fq-subsample start
-[2m2023-10-02T18:49:27.431967Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m initializing rng from seed = 1
-[2m2023-10-02T18:49:27.431973Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m counting records
-[2m2023-10-02T18:49:27.539011Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m r1-src record count = 100000
-[2m2023-10-02T18:49:27.539028Z[0m [33m WARN[0m [2mfq::commands::subsample[0m[2m:[0m record count (1000000) > r1-src record count (100000). Using record-count = 100000 instead.
-[2m2023-10-02T18:49:27.539033Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m building filter
-[2m2023-10-02T18:49:27.546434Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m sampling paired end reads
-[2m2023-10-02T18:49:31.980133Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m sampled 100000/100000 (100.0%) records
-[2m2023-10-02T18:49:31.980618Z[0m [32m INFO[0m [2mfq::commands::subsample[0m[2m:[0m fq-subsample end
