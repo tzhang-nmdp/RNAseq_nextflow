@@ -1,0 +1,3 @@
+primary
+sarscov2
+human

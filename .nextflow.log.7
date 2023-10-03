@@ -1,0 +1,69 @@
+Oct-03 14:23:20.265 [main] DEBUG nextflow.cli.Launcher - $> nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./ --fasta genome.fa
+Oct-03 14:23:20.361 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
+Oct-03 14:23:20.383 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/tzhang/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-03 14:23:20.392 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-03 14:23:20.393 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-03 14:23:20.397 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-03 14:23:20.407 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-03 14:23:20.506 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-03 14:23:20.531 [main] INFO  nextflow.cli.CmdRun - Launching `rnaseq_pipeline.nf` [zen_elion] DSL2 - revision: 9b977a8cf8
+Oct-03 14:23:20.532 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-03 14:23:20.532 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-03 14:23:20.542 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/tzhang/.nextflow/secrets/store.json
+Oct-03 14:23:20.549 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2d7e1102] - activable => nextflow.secret.LocalSecretsProvider@2d7e1102
+Oct-03 14:23:20.633 [main] DEBUG nextflow.Session - Session UUID: c50244e3-617d-4f36-bc83-66b031ed6af4
+Oct-03 14:23:20.633 [main] DEBUG nextflow.Session - Run name: zen_elion
+Oct-03 14:23:20.635 [main] DEBUG nextflow.Session - Executor pool size: 8
+Oct-03 14:23:20.646 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-03 14:23:20.683 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.3 build 5875
+  Created: 11-08-2023 18:37 UTC 
+  System: Linux 3.10.0-1160.76.1.el7.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.19+7-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 3613@ip-10-70-49-186.ec2.internal [10.70.49.186]
+  CPUs: 8 - Mem: 62 GB (59.1 GB) - Swap: 0 (0)
+Oct-03 14:23:20.712 [main] DEBUG nextflow.Session - Work-dir: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/work [xfs]
+Oct-03 14:23:20.766 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-03 14:23:20.780 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-03 14:23:20.811 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-03 14:23:20.825 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Oct-03 14:23:20.949 [main] DEBUG nextflow.Session - Session start
+Oct-03 14:23:20.959 [main] DEBUG nextflow.Session - Using default localLib path: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/lib
+Oct-03 14:23:20.962 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/lib
+Oct-03 14:23:20.963 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/tzhang/Jupyter_lab_space/git_test/test_pipeline/lib/nfcore_external_java_deps.jar
+Oct-03 14:23:24.259 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-03 14:23:24.288 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `genomes` -- Initialise it to a default value eg. `params.genomes = some_value`
+Oct-03 14:23:24.289 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `gtf` -- Initialise it to a default value eg. `params.gtf = some_value`
+Oct-03 14:23:24.289 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `gff` -- Initialise it to a default value eg. `params.gff = some_value`
+Oct-03 14:23:24.293 [main] DEBUG nextflow.Session - Session aborted -- Cause: No GTF or GFF3 annotation specified! The pipeline requires at least one of these files.
+Oct-03 14:23:24.305 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.WorkflowScriptErrorException: No GTF or GFF3 annotation specified! The pipeline requires at least one of these files.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at nextflow.Nextflow.error(Nextflow.groovy:215)
+	at nextflow.Nextflow$error.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at WorkflowRnaseq.initialise(WorkflowRnaseq.groovy:23)
+	at WorkflowRnaseq$initialise.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
+	at Script_a73d8fa6.runScript(Script_a73d8fa6:16)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:145)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:224)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)

@@ -1,0 +1,14 @@
+#Summary
+#Generated on	Mon Oct 02 18:49:09 UTC 2023
+#Version	5
+chroms	1
+bases	457751
+defined	440851
+undefined	16900
+contigs	4
+scaffolds	4
+interpad	300
+source	/home/tzhang/Jupyter_lab_space/git_test/test_pipeline/work/e8/437f97b4dd954585f1cb5d65ee15ac/bbsplit/ref/genome/1/merged_ref_8374379829187813017.fa.gz
+bytes	140064
+last modified	1696272549448
+scafprefixes	true

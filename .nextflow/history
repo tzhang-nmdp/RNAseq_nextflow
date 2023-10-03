@@ -7,3 +7,15 @@
 2023-09-21 01:39:55	4.8s	fervent_agnesi	OK	a48d20e2183f0393f1649f6c710f3150	d3c8ab70-2ac5-4b7a-87e6-6767a09cbdc1	nextflow run test_next_flow.nf
 2023-09-21 01:40:04	3.5s	grave_laplace	OK	a48d20e2183f0393f1649f6c710f3150	1bd5339a-9805-410b-bd5b-0c87d3ed72f8	nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
 2023-09-21 17:43:54	9.4s	tender_hodgkin	OK	a48d20e2183f0393f1649f6c710f3150	e764e423-77da-4292-b8fc-72cf847a5251	nextflow run test_next_flow.nf --input test_2.fastq.gz --sleep 1
+2023-10-02 18:48:53	1m 26s	infallible_bassi	ERR	3bec2331cac2b5ff88a1dc71a21fab6529b57a0f	aaf64cbf-f3fe-4b21-aab9-9df35d6f4f9e	nextflow run nf-core/rnaseq -profile test --outdir ./
+2023-10-02 20:27:54	-	marvelous_wescoff	-	aad80cc7a283d313b2f613849c1d7824	d899a8b7-036b-468e-bf20-80bca40cc03c	nextflow rnaseq_pipeline.nf -profile test --outdir ./
+2023-10-03 03:42:21	-	special_caravaggio	-	e6cec6867cda68eb08a0c36c26285d2d	3c411455-ccfe-4fc4-95ee-40369ca3c2e2	nextflow rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:22:47	-	friendly_lattes	-	9b977a8cf88063e67997f9697aa966c0	f9ff3722-dd5d-413b-8124-6859507e45f4	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:23:20	-	zen_elion	-	9b977a8cf88063e67997f9697aa966c0	c50244e3-617d-4f36-bc83-66b031ed6af4	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./ --fasta genome.fa
+2023-10-03 14:27:12	-	chaotic_maxwell	-	9b977a8cf88063e67997f9697aa966c0	0290e94c-51bc-4da4-8171-0be372c8f1da	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:29:03	-	naughty_bhabha	-	9b977a8cf88063e67997f9697aa966c0	3d571fba-f917-421b-b2b1-0352e9e58521	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./ --genome GRCh38
+2023-10-03 14:34:16	-	condescending_shirley	-	9b977a8cf88063e67997f9697aa966c0	34f56837-244a-478d-9907-b9f67952788e	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./ --genome GRCh38
+2023-10-03 14:34:31	-	spontaneous_yalow	-	9b977a8cf88063e67997f9697aa966c0	521b0315-ca66-4555-9247-4c87800cd06c	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:35:44	-	scruffy_jang	-	9b977a8cf88063e67997f9697aa966c0	c87782be-29ed-43f1-8bfa-0d77709fe69d	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:36:18	-	fervent_chandrasekhar	-	9b977a8cf88063e67997f9697aa966c0	2251731e-bf34-44ee-a53f-ecddfa8f9e61	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./
+2023-10-03 14:43:23	-	insane_bohr	-	9b977a8cf88063e67997f9697aa966c0	4acfb973-d780-4e2f-ac3e-3c1410981514	nextflow run rnaseq_pipeline.nf -profile test_full --outdir ./ --genome GRCh38

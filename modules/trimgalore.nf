@@ -78,8 +78,8 @@ process TRIMGALORE {
 // Read QC, UMI extraction and trimming
 //
 
-include { FASTQC           } from '../../../modules'
-include { UMITOOLS_EXTRACT } from '../../../modules'
+include { FASTQC           } from './modules'
+include { UMITOOLS_EXTRACT } from './modules'
 
 //
 // Function that parses TrimGalore log output file to get total number of reads after trimming
