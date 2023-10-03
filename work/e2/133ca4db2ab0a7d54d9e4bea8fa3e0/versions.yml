@@ -1,0 +1,4 @@
+"NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:STAR_GENOMEGENERATE":
+    star: 2.6.1d
+    samtools: 1.9 
+    gawk: 4.0.2 Copyright (C) 1989
