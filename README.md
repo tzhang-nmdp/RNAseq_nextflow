@@ -27,7 +27,7 @@
 16. Present QC for raw read, alignment, gene biotype, sample similarity, and strand-specificity checks ([`MultiQC`](http://multiqc.info/), [`R`](https://www.r-project.org/))
 First, prepare a samplesheet with your input data that looks as follows:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-### prepare the sample input
+### 1. prepare the sample input
 **samplesheet.csv**:
 ```csv
 sample,fastq_1,fastq_2,strandedness
@@ -38,7 +38,7 @@ CONTROL_REP1,{sample_id}_R1_001.fastq.gz,{sample_id}_R2_001.fastq.gz,auto
 
 Each row represents a fastq file (single-end) or a pair of fastq files (paired end). Rows with the same sample identifier are considered technical replicates and merged automatically. The strandedness refers to the library preparation and will be automatically inferred if set to `auto`.
 
-### run Rnaseq nextflow:
+### 2. run Rnaseq nextflow:
 ```bash
 nextflow run nf-core/rnaseq \
     --input samplesheet.csv \
