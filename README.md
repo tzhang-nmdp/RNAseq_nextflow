@@ -26,7 +26,7 @@
 15. Pseudoalignment and quantification ([`Salmon`](https://combine-lab.github.io/salmon/) or ['Kallisto'](https://pachterlab.github.io/kallisto/); _optional_)
 16. Present QC for raw read, alignment, gene biotype, sample similarity, and strand-specificity checks ([`MultiQC`](http://multiqc.info/), [`R`](https://www.r-project.org/))
 First, prepare a samplesheet with your input data that looks as follows:
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### prepare the sample input
 **samplesheet.csv**:
 ```csv
