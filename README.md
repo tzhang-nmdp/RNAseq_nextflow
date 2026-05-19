@@ -40,7 +40,7 @@ Each row represents a fastq file (single-end) or a pair of fastq files (paired e
 
 ### 2. run Rnaseq nextflow:
 ```bash
-nextflow run nf-core/rnaseq \
+nextflow run rnaseq_pipeline.nf \
     --input samplesheet.csv \
     --outdir <OUTDIR> \
     --genome GRCh37 \
